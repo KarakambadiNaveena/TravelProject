@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="Style.css" rel="stylesheet" />
+
+    <style>
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            background-image: url("https://wallpaperaccess.com/full/680072.jpg");
+            background-size: 1280px 720px;
+        }
+
+        .form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 480px;
+            border-radius: 2px;
+            text-align: center;
+            padding: 30px 30px 5px 30px;
+        }
+
+            .form header {
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .form form {
+                margin: 40px 0;
+            }
+
+            .form field {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+        form input {
+            height: 50px;
+            width: 100%;
+            outline: none;
+            padding: 0 15px;
+            padding-left: 40px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid #34495e;
+            border-bottom-width: 2px;
+            outline: none;
+            margin-top: 3px;
+        }
+
+            form input ::placeholder {
+                color: #bfbfbf;
+                font-size: 12px;
+                width: 10ch;
+            }
+
+        form .field {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+            form.field.input-area {
+                position: relative;
+            }
+
+        form input[type="submit"] {
+            margin-top: 30px;
+            border: none;
+            background: #0094ff;
+            color: #ffff;
+            font-size-18px;
+            cursor: pointer;
+        }
+
+            form input[type="submit"]:hover {
+                background: #333867;
+            }
+    </style>
+
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
